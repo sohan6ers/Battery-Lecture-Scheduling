@@ -1,0 +1,14 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Google's stock price over time.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/sohan6ers/Battery-Lecture-Scheduling/main/VegaLiteData/MoneySavedCsv3.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "date", "type": "temporal"},
+    "y": {"field": "moneysaved", "type": "quantitative"}
+  },
+  "config": {}
+}
