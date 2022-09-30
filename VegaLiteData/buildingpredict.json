@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Energy Consumption Forecast",
+  "description": "Energy Consumption",
+  "data": {
+    "url": "https://raw.githubusercontent.com/sohan6ers/Battery-Lecture-Scheduling/main/VegaLiteData/updatedbuilding.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [{"name": "grid", "select": "interval", "bind": "scales"}],
+  "height": 300,
+  "width": 1000,
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "datetime", "type": "temporal", "title": ""},
+    "y": {
+      "field": "prediction",
+      "type": "quantitative",
+      "title": "Energy Consumption (MWh)"
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFont": "Helvetica Neue",
+      "titleFont": "Helvetica Neue",
+      "labelFontSize": 14,
+      "titleFontSize": 23
+    },
+    "mark": {"font": "monospace", "color": "orangered"},
+    "title": {
+      "font": "Helvetica Neue",
+      "subtitleFont": "monospace",
+      "fontSize": 35
+    }
+  }
+}
