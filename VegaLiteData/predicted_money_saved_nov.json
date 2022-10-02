@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Predicted Money Saved",
+  "description": "Predicted Money Saved",
+  "data": {
+    "url": "https://raw.githubusercontent.com/sohan6ers/Battery-Lecture-Scheduling/main/VegaLiteData/predicted_cost_saved_nov.csv",
+    "format": {"type": "csv"}
+  },
+  "height": 300,
+  "width": 800,
+  "mark": {"type": "bar", "width": {"band": 0.7}},
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": ""},
+    "y": {
+      "field": "moneysaved",
+      "type": "quantitative",
+      "title": "Money Saved ($AUD)"
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFont": "Helvetica Neue",
+      "titleFont": "Helvetica Neue",
+      "labelFontSize": 14,
+      "titleFontSize": 23
+    },
+    "mark": {"font": "monospace", "color": "green", "tooltip": true},
+    "title": {
+      "font": "Helvetica Neue",
+      "subtitleFont": "monospace",
+      "fontSize": 35
+    }
+  }
+}
