@@ -4,8 +4,6 @@ This is Data Science Team 10's code and approach for the project: 'Prediction an
 ## Forecast
 5 different models for forecasting solar/building series values were built. Of those 5, we decided on an ARIMA model due to our past experience of using it.
 
-## Optimisation 
-
 
 ## Website
 
